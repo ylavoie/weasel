@@ -5,7 +5,7 @@ Weasel::DriverRole - API definition for driver wrappers
 
 =head1 VERSION
 
-0.02
+0.03
 
 =head1 SYNOPSIS
 
@@ -40,7 +40,7 @@ use Carp;
 use Moose::Role;
 use namespace::autoclean;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 =head1 ATTRIBUTES
 
@@ -61,6 +61,19 @@ has 'started' => (is => 'rw',
                   default => 0,
                  );
 
+=item user_error_handler
+
+Holds the reference to the user callable error handler.
+
+=cut
+
+has 'user_error_handler' => (
+    is => 'rw',
+    required => 0,
+    isa => 'CodeRef',
+    clearer => 'clearer_user_error_handler',
+    predicate => 'has_user_error_handler'
+);
 =back
 
 =head1 SUBROUTINES/METHODS
