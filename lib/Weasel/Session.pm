@@ -33,7 +33,6 @@ Weasel::Session - Connection to an encapsulated test driver
 =head1 DEPENDENCIES
 
 
-
 =cut
 
 package Weasel::Session;
@@ -439,7 +438,7 @@ simulating keyboard input.
 sub send_keys {
     my ($self, $element, @keys) = @_;
 
-    return $self->_logged(
+    $self->_logged(
         sub {
             $self->driver->send_keys($element->_id, @keys);
         },
@@ -652,6 +651,8 @@ Licensed under the same terms as Perl.
 
 =cut
 
+
 __PACKAGE__->meta->make_immutable;
 
 1;
+
