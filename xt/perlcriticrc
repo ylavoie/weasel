@@ -7,10 +7,8 @@ severity = 1
 
 verbose = %p in %f[%l:%c] = %m %r\n
 pager = less
-
 theme     =
 exclude   = 'OTRS::'
-
 [CodeLayout::ProhibitHardTabs]
 allow_leading_tabs = 0
 
@@ -51,14 +49,12 @@ string_mode = thorough
 
 #--------------------------------------------------------------
 # I think these are really important, so always load them
-
+ 
 [TestingAndDebugging::RequireUseStrict]
 severity = 1
 
 [TestingAndDebugging::RequireUseWarnings]
 severity = 1
-
 #--------------------------------------------------------------
 # For all other Policies, I accept the default severity,
 # so no additional configuration is required for them.
-
