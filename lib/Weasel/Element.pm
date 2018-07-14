@@ -22,8 +22,6 @@ attributes and the tag name, etc.
 
 =head1 DEPENDENCIES
 
-
-
 =cut
 
 package Weasel::Element;
@@ -247,4 +245,3 @@ Licensed under the same terms as Perl.
 __PACKAGE__->meta->make_immutable;
 
 1;
-

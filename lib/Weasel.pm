@@ -249,7 +249,6 @@ sub session {
 
 
 =back
-
 =head1 AUTHOR
 
 Erik Huelsmann
@@ -278,33 +277,13 @@ The source code repository for Weasel is at
 Community support is available through
 L<perl-weasel@googlegroups.com|mailto:perl-weasel@googlegroups.com>.
 
-=head1 MAINTAINERS
-
-Erik Huelsmann
-
-=head1 BUGS
-
-Bugs can be filed in the GitHub issue tracker for the Weasel project:
- https://github.com/perl-weasel/weasel/issues
-
-=head1 SOURCE
-
-The source code repository for Weasel is at
- https://github.com/perl-weasel/weasel
-
-=head1 SUPPORT
-
-Community support is available through
-L<perl-weasel@googlegroups.com|mailto:perl-weasel@googlegroups.com>.
-
-=head1 LICENSE AND COPYRIGHT
+=head1 COPYRIGHT
 
  (C) 2016-2019  Erik Huelsmann
 
 Licensed under the same terms as Perl.
 
 =cut
-
 
 __PACKAGE__->meta->make_immutable;
 

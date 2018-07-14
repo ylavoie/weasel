@@ -243,15 +243,7 @@ See L<Weasel::Element>'s C<find_all> function for more documentation.
 sub find_all {
     my ($self, $element, $pattern, %args) = @_;
 
-    my $expanded_pattern;
-    # if (exists $args{scheme} and $args{scheme} eq 'css') {
-    #     delete $args{scheme};
-    #     $expanded_pattern =
-    #         q{.} . HTML::Selector::XPath->new($pattern)->to_xpath;
-    # }
-    # else {
-    $expanded_pattern = expand_finder_pattern($pattern, \%args);
-    # }
+    my $expanded_pattern = expand_finder_pattern($pattern, \%args);
     my @rv = $self->_logged(
         sub {
             return
@@ -384,7 +376,6 @@ sub set_selected {
         },
         'set_selected', qq{Setting 'selected' property: $value});
 }
-
 
 =item is_displayed($element)
 
@@ -565,7 +556,6 @@ coderefs - aren't called; instead they are passed as-is to the
 C<$log_hook> for lazy evaluation.
 
 =cut
-
 sub _unlogged {
     my ($self, $func) = @_;
 
@@ -632,8 +622,8 @@ Erik Huelsmann
 
 =head1 CONTRIBUTORS
 
- Erik Huelsmann
- Yves Lavoie
+Erik Huelsmann
+Yves Lavoie
 
 =head1 MAINTAINERS
 
@@ -662,8 +652,6 @@ Licensed under the same terms as Perl.
 
 =cut
 
-
 __PACKAGE__->meta->make_immutable;
 
 1;
-

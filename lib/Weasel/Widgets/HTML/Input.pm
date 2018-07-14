@@ -15,8 +15,6 @@ Weasel::Widgets::HTML::Input - Parent of the INPUT, OPTION, TEXTAREA and BUTTON 
 
 =head1 DEPENDENCIES
 
-
-
 =cut
 
 package Weasel::Widgets::HTML::Input;
@@ -29,6 +27,7 @@ use Moose;
 use Weasel::Element;
 use Weasel::WidgetHandlers qw/ register_widget_handler /;
 extends 'Weasel::Element';
+
 use namespace::autoclean;
 
 register_widget_handler(
@@ -51,7 +50,6 @@ register_widget_handler(
     tag_name => 'textarea',
     attributes => {
     });
-
 
 =head1 SUBROUTINES/METHODS
 
@@ -93,8 +91,8 @@ Erik Huelsmann
 
 =head1 CONTRIBUTORS
 
- Erik Huelsmann
- Yves Lavoie
+Erik Huelsmann
+Yves Lavoie
 
 =head1 MAINTAINERS
 
@@ -126,4 +124,3 @@ Licensed under the same terms as Perl.
 __PACKAGE__->meta->make_immutable;
 
 1;
-

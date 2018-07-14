@@ -74,7 +74,6 @@ sub select_option {
     return $self->find_option($text)->click;
 }
 
-
 =back
 
 =head1 AUTHOR

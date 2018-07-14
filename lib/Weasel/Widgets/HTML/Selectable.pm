@@ -40,9 +40,9 @@ register_widget_handler(
     __PACKAGE__, 'HTML',
     tag_name => 'input',
     attributes => {
-        type => 'checkbox',
-    });
-
+        type => $_,
+    })
+    for (qw/ radio checkbox /);
 
 register_widget_handler(
     __PACKAGE__, 'HTML',
@@ -72,6 +72,7 @@ sub selected {
             $self->click; # select
         }
     }
+
     return $self->session->get_attribute($self, 'selected');
 }
 
@@ -134,6 +135,4 @@ Licensed under the same terms as Perl.
 =cut
 
 __PACKAGE__->meta->make_immutable;
-
 1;
-
