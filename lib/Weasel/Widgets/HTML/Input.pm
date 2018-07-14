@@ -15,6 +15,8 @@ Weasel::Widgets::HTML::Input - Parent of the INPUT, OPTION, TEXTAREA and BUTTON 
 
 =head1 DEPENDENCIES
 
+
+
 =cut
 
 package Weasel::Widgets::HTML::Input;
@@ -124,3 +126,4 @@ Licensed under the same terms as Perl.
 __PACKAGE__->meta->make_immutable;
 
 1;
+

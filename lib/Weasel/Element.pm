@@ -22,6 +22,8 @@ attributes and the tag name, etc.
 
 =head1 DEPENDENCIES
 
+
+
 =cut
 
 package Weasel::Element;
@@ -73,7 +75,6 @@ type locators.
 In case the C<$locator> is a mnemonic (starts with an asterisk ['*']),
 additional arguments may be provided for expansion of the mnemonic.  See
 L<Weasel::FindExpanders::HTML> for documentation of the standard expanders.
-
 Any arguments passed in the C<$widget_args> array reference, are passed to
 the widget's constructor.
 
@@ -95,7 +96,6 @@ type locators.
 In case the C<$locator> is a mnemonic (starts with an asterisk ['*']),
 additional arguments may be provided for expansion of the mnemonic.  See
 L<Weasel::FindExpanders::HTML> for documentation of the standard expanders.
-
 Any arguments passed in the C<$widget_args> array reference, are passed to
 the widget's constructor.
 
@@ -241,7 +241,7 @@ Licensed under the same terms as Perl.
 
 =cut
 
-
 __PACKAGE__->meta->make_immutable;
 
 1;
+
