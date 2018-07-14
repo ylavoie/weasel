@@ -33,6 +33,7 @@ Weasel::Session - Connection to an encapsulated test driver
 =head1 DEPENDENCIES
 
 
+
 =cut
 
 package Weasel::Session;
@@ -555,6 +556,7 @@ coderefs - aren't called; instead they are passed as-is to the
 C<$log_hook> for lazy evaluation.
 
 =cut
+
 sub _unlogged {
     my ($self, $func) = @_;
 
