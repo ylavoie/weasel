@@ -7,8 +7,10 @@ severity = 1
 
 verbose = %p in %f[%l:%c] = %m %r\n
 pager = less
+
 theme     =
 exclude   = 'OTRS::'
+
 [CodeLayout::ProhibitHardTabs]
 allow_leading_tabs = 0
 
@@ -29,12 +31,10 @@ lib_sections = NAME | VERSION | SYNOPSIS | DESCRIPTION | DEPENDENCIES | SUBROUTI
 modules = Carp::Always Data::Dumper Data::Printer
 
 [-Modules::RequireVersionVar]
-
 [-RegularExpressions::ProhibitEscapedMetacharacters]
 [-RegularExpressions::RequireBracesForMultiline]
 [-RegularExpressions::RequireDotMatchAnything]
 [-RegularExpressions::RequireLineBoundaryMatching]
-
 # The following requires Critic 1.36. disable until released
 #[Subroutines::ProhibitUnusedPrivateSubroutines]
 #allow_name = _build_\w+
@@ -49,12 +49,13 @@ string_mode = thorough
 
 #--------------------------------------------------------------
 # I think these are really important, so always load them
- 
+
 [TestingAndDebugging::RequireUseStrict]
 severity = 1
 
 [TestingAndDebugging::RequireUseWarnings]
 severity = 1
+
 #--------------------------------------------------------------
 # For all other Policies, I accept the default severity,
 # so no additional configuration is required for them.
