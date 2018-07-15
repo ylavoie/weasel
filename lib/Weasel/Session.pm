@@ -439,7 +439,7 @@ simulating keyboard input.
 sub send_keys {
     my ($self, $element, @keys) = @_;
 
-    $self->_logged(
+    return $self->_logged(
         sub {
             $self->driver->send_keys($element->_id, @keys);
         },
