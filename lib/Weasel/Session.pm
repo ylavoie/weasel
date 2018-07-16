@@ -501,7 +501,6 @@ sub _wrap_callback {
         };
     }
 }
-
 sub wait_for {
     my ($self, $callback, %args) = @_;
 
