@@ -519,7 +519,7 @@ before 'BUILDARGS', sub {
     my ($class, @args) = @_;
     my $args = (ref $args[0]) ? $args[0] : { @args };
 
-    confess 'Driver used to construct session object uses old API version;\n' .
+    confess "Driver used to construct session object uses old API version;\n" .
             'some functionality may not work correctly'
         if ($args->{driver}
             && $args->{driver}->implements < $Weasel::DriverRole::VERSION);
