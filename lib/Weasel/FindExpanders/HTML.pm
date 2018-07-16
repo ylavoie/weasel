@@ -310,3 +310,5 @@ Licensed under the same terms as Perl.
 =cut
 
 1;
+=back
+
