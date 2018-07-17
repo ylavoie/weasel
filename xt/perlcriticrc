@@ -40,6 +40,11 @@ modules = Carp::Always Data::Dumper Data::Printer
 #allow_name = _build_\w+
 [-Subroutines::ProhibitUnusedPrivateSubroutines]
 
+# The following requires Critic 1.36. disable until released
+#[Subroutines::ProhibitUnusedPrivateSubroutines]
+#allow_name = _build_\w+
+[-Subroutines::ProhibitUnusedPrivateSubroutines]
+
 [Subroutines::RequireArgUnpacking]
 
 [-ValuesAndExpressions::ProhibitEmptyQuotes]
@@ -59,3 +64,4 @@ severity = 1
 #--------------------------------------------------------------
 # For all other Policies, I accept the default severity,
 # so no additional configuration is required for them.
+
