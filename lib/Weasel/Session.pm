@@ -555,6 +555,7 @@ coderefs - aren't called; instead they are passed as-is to the
 C<$log_hook> for lazy evaluation.
 
 =cut
+
 sub _unlogged {
     my ($self, $func) = @_;
 
