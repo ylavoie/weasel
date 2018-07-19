@@ -15,4 +15,4 @@ install:
   - dzil listdeps --author --missing | cpanm --no-skip-satisfied
 
 script:
-  - dzil test --author --release
+  - dzil test -I lib --author --release
