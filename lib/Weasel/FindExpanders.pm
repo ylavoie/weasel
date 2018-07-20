@@ -3,10 +3,6 @@
 
 Weasel::FindExpanders - Mapping find patterns to xpath locators
 
-=head1 VERSION
-
-0.01
-
 =head1 SYNOPSIS
 
   use Weasel::FindExpanders qw( register_find_expander );
@@ -43,6 +39,7 @@ use base 'Exporter';
 use Carp;
 
 our @EXPORT_OK = qw| register_find_expander expand_finder_pattern |;
+our $VERSION = '0.01';
 
 =head1 SUBROUTINES/METHODS
 

@@ -3,10 +3,6 @@
 
 Weasel::Widgets::HTML::Input - Parent of the INPUT, OPTION and BUTTON wrappers
 
-=head1 VERSION
-
-0.01
-
 =head1 SYNOPSIS
 
 =head1 DESCRIPTION
@@ -30,6 +26,8 @@ use Weasel::Element;
 use Weasel::WidgetHandlers qw/ register_widget_handler /;
 extends 'Weasel::Element';
 use namespace::autoclean;
+
+our $VERSION = '0.01';
 
 register_widget_handler(
     __PACKAGE__, 'HTML',

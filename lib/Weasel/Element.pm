@@ -3,10 +3,6 @@
 
 Weasel::Element - The base HTML/Widget element class
 
-=head1 VERSION
-
-0.01
-
 =head1 SYNOPSIS
 
    my $element = $session->page->find("./input[\@name='phone']");
@@ -33,6 +29,8 @@ use warnings;
 
 use Moose;
 use namespace::autoclean;
+
+our $VERSION = '0.01';
 
 =head1 ATTRIBUTES
 

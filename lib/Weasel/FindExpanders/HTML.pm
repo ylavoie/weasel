@@ -3,10 +3,6 @@
 
 Weasel::FindExpanders::HTML - Weasel FindExpanders HTML
 
-=head1 VERSION
-
-0.02
-
 =head1 SYNOPSIS
 
   use Weasel::FindExpanders::HTML;
@@ -27,6 +23,8 @@ use strict;
 use warnings;
 
 use Weasel::FindExpanders qw/ register_find_expander /;
+
+our $VERSION = '0.02';
 
 =head1 DESCRIPTION
 
@@ -309,3 +307,4 @@ Licensed under the same terms as Perl.
 =cut
 
 1;
+

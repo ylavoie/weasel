@@ -1,11 +1,7 @@
 
 =head1 NAME
 
-Weasel::Element::Document - Weasel Element Document 
-
-=head1 VERSION
-
-0.01
+Weasel::Element::Document - Weasel Element Document
 
 =head1 SYNOPSIS
 
@@ -29,6 +25,8 @@ use warnings;
 use Moose;
 extends 'Weasel::Element';
 use namespace::autoclean;
+
+our $VERSION = '0.01';
 
 =head1 ATTRIBUTES
 

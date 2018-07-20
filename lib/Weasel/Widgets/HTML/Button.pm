@@ -3,10 +3,6 @@
 
 Weasel::Widgets::HTML::Button - Wrapper for button-like INPUT and BUTTON tags
 
-=head1 VERSION
-
-0.01
-
 =head1 SYNOPSIS
 
   my $button = $session->page->find('./button');
@@ -34,6 +30,8 @@ use Weasel::WidgetHandlers qw/ register_widget_handler /;
 
 extends 'Weasel::Widgets::HTML::Input';
 use namespace::autoclean;
+
+our $VERSION = '0.01';
 
 =head1 SUBROUTINES/METHODS
 

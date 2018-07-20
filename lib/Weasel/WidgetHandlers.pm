@@ -3,10 +3,6 @@
 
 Weasel::WidgetHandlers - Mapping elements to widget handlers
 
-=head1 VERSION
-
-0.01
-
 =head1 SYNOPSIS
 
   use Weasel::WidgetHandlers qw( register_widget_handler );
@@ -51,6 +47,7 @@ use base 'Exporter';
 use Module::Runtime qw(use_module);
 use List::Util qw(max);
 
+our $VERSION = '0.01';
 our @EXPORT_OK = qw| register_widget_handler best_match_handler_class |;
 
 =head1 SUBROUTINES/METHODS
