@@ -1,3 +1,6 @@
+** 0.23 / 2019-06-07
+   - Use Data::Printer to dump structures in logs
+
 ** 0.22 / 2019-02-28
    - Correctly update $VERSION strings (incorrectly updated on 0.21)
 

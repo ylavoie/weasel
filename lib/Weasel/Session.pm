@@ -5,7 +5,7 @@ Weasel::Session - Connection to an encapsulated test driver
 
 =head1 VERSION
 
-0.10
+0.11
 
 =head1 SYNOPSIS
 
@@ -45,6 +45,7 @@ use warnings;
 use Moose;
 use namespace::autoclean;
 
+use Data::Printer;
 use HTML::Selector::XPath;
 use Module::Runtime qw/ use_module /;;
 use Weasel::FindExpanders qw/ expand_finder_pattern /;
@@ -539,8 +540,8 @@ sub _appending_wrap {
     my ($str) = @_;
     return sub {
         my $rv = shift;
-        if ($rv) {
-            return "$str ($rv)";
+        if ( $rv ) {
+            return "$str (" .np($rv) . ")";
         }
         else {
             return $str;
