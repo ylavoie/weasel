@@ -525,7 +525,8 @@ sub tag_name {
 
     return $self->_logged(sub { return $self->driver->tag_name($element->_id) },
          'tag_name',
-         sub { my $tag = shift; return "found tag with name $tag" },
+         sub { no warnings 'uninitialized';
+               my $tag = shift; return "found tag with name '$tag'" },
          'getting tag name');
 }
 
